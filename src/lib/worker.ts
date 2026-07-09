@@ -4,8 +4,6 @@ import { pipeline, env, AutomaticSpeechRecognitionPipeline } from '@huggingface/
 env.allowLocalModels = false;
 env.useBrowserCache = true;
 env.allowRemoteModels = true;
-// Enable SIMD for faster computations if available
-env.allowSimd = true;
 
 // Use the Singleton pattern to enable lazy construction of the pipeline.
 class PipelineSingleton {
